@@ -691,8 +691,7 @@
                 const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
                 const fParts = evento.fecha.split('-');
                 const fechaLegible = `${parseInt(fParts[2])} de ${meses[parseInt(fParts[1]) - 1]} de ${fParts[0]}`;
-                const waUrl = `https://wa.me/573022863855?text=${encodeURIComponent(`Hola Entertainment & Productions. Solicito información del evento: *${evento.nombre}*`)}`;
-
+const waUrl = `https://wa.me/573215497088?text=${encodeURIComponent(`Hola Entertainment & Productions. Solicito información del evento: *${evento.nombre}*`)}`;
                 if(evento.estado === 'agotado') {
                     statusClase = "estado-soldout"; statusTexto = "SOLD OUT"; cardClaseExtra = "is-soldout";
                     botonHtml = `<button disabled class="font-syncopate bg-zinc-950 text-zinc-600 px-2 md:px-6 py-2 md:py-3 text-[6px] md:text-[10px] uppercase tracking-[0.2em] w-full cursor-not-allowed border border-zinc-900 font-bold relative z-30">AGOTADO</button>`;
